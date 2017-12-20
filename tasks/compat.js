@@ -9,10 +9,7 @@ module.exports = function(gulp, config) {
   gulp.task('compat', function() {
     var paths = config.paths;
     var providers = [
-      '$affix', '$alert', '$aside', '$button', '$collapse', '$datepicker', 'datepickerViews',
-      '$dropdown', '$dateFormatter', '$dateParser', 'debounce', 'throttle', 'dimensions',
-      '$parseOptions', '$modal', '$navbar', '$popover', '$scrollspy', '$select', '$tab',
-      '$timepicker', '$tooltip', '$typeahead'
+      '$datepicker', 'datepickerViews', '$dateFormatter', '$dateParser', '$timepicker',
     ];
     var compatProviders = providers.map(function(provider) {
       var prependBs = function(what) {
